@@ -7,7 +7,7 @@ class Button extends Component {
         constructor(props){
             super(props);
             this.state = {
-                count : props.count
+                count : props.count ?? 0
             }
             this.increCount = this.increCount.bind(this)
             this.decreCount = this.decreCount.bind(this)
@@ -25,7 +25,7 @@ class Button extends Component {
     render() {
 
         return (
-            <div style={{justifyContent : 'center'}}>
+            <div style={{justifyContent : 'center' , display:'flex'}}>
             <button onClick={this.decreCount}>-</button>
             <h4>{this.state.count}</h4>
             <button onClick={this.increCount}>+</button>

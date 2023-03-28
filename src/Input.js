@@ -1,4 +1,4 @@
-import React ,{Component} from "react"; 
+import {Component} from "react"; 
 
 
 class Input extends Component {
@@ -16,12 +16,12 @@ class Input extends Component {
         }
         render(){
             return (
-                <>
+                <div>
                 <p>This is Input Field</p>
                 <input type='input' onChange={this.printInp} placeholder="Enter something" />
                 <p>{this.state.letter}</p>
                 <p>{this.state.letter.length}</p>
-                </>
+                </div>
             )
         }
 

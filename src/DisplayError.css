@@ -1,0 +1,15 @@
+section {
+    font-size: 11px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left:1%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    padding-right:1%;
+    width: 40%; 
+    border: 1px solid red;
+    /* margin: auto; */
+    align-self: center;
+    /* justify-self: center; */
+    text-align: center;
+}

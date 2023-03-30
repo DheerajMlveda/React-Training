@@ -1,5 +1,6 @@
 
 form {
+    
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -51,17 +52,23 @@ input{
     border: 2px solid dodgerblue;
     border-radius: 5px;
     background-color: dodgerblue;
-    color:  white;    
-    margin: auto;display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
+    color:  white;  
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    align-self: center;
+  
 }
 
 
 #btn:hover{
     text-decoration: underline;
     color: dodgerblue;
+    background-color: white;
+}
+select {
+    border-radius: 5px;
     background-color: white;
 }
 

@@ -9,7 +9,7 @@ form {
     justify-content: center;
     text-decoration: dashed;
     align-items: end;
-    margin: auto;
+    margin: 30px auto auto auto;
     padding-bottom: 30px;
     /* padding: auto; */
     border: 2px solid dodgerblue;
@@ -48,6 +48,23 @@ input{
 }
 
 
+#btn:disabled{
+    border: 2px solid rgb(116, 186, 255);
+    border-radius: 5px;
+    background-color: rgb(116, 186, 255);
+    color:  white;  
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    align-self: center;
+}
+
+#btn:disabled:hover{
+    text-decoration: underline;
+    color: rgb(116, 186, 255);
+    background-color: white;
+}
 #btn{
     border: 2px solid dodgerblue;
     border-radius: 5px;

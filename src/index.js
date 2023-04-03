@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import Container from "./Container";
+import Example from "./Example";
 import reportWebVitals from "./reportWebVitals";
-// import CounterBtnFn from "./CounterBtnFn";
-// import ToDoList from './ToDoList';
-// const person ={ boom : "dheeraj" , marks : 69 }
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <CounterBtnFn /> */}
-    <App   />
-    {/* <ToDoList/> */}
-  </React.StrictMode>
+    <Container/>
+  {/* < Example/> */}
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

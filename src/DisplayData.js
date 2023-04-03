@@ -22,14 +22,14 @@ export default function DisplayData ({Employees}){
               <li>email : {element.email}</li>
               <li>password : {element.password}</li>
               <li>gender : {element.gender}</li>
-              <li> hobby : <ol>
+              {/* <li> hobby : <ol>
               
               {element.hobby.map(el => {
                 return (
                   <li>{el}</li>   
                   )
                 })}
-              </ol> </li>
+              </ol> </li> */}
               <li>state : {element.state}</li>
             </ul>
           );

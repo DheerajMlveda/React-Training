@@ -110,8 +110,8 @@ export default function EmployeeForm({onSabmit}) {
         </div>
         <DisplayError
         toggle ={emailToggle}
-          errorMessage="Email should not start with any Digit"
-          error={email.trim("").length !== 0 && !email.match(/^[^0-10]/)}
+          errorMessage="Email should not Contain whitespaces"
+          error={email.trim("").includes(" ")}
         />
         <br />
         <div>
@@ -204,7 +204,7 @@ export default function EmployeeForm({onSabmit}) {
             name="hobby3"
             value="Animes"
           />
-          <label htmlFor="hobby3"> Animes</label>
+          <label htmlFor="hobby3"> animes</label>
         </div>
         <br />
         <div>

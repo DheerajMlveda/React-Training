@@ -1,6 +1,6 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 // import { Component } from "react";
-import "./DisplayError.css"
+// import "./DisplayError.css"
 
 
 function DisplayError({toggle ,error , errorMessage}){

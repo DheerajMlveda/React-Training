@@ -1,17 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Container from "./Container";
-import Example from "./Example";
+// import Container from "./Container";
+// import Example from "./Example";
 import reportWebVitals from "./reportWebVitals";
+import DataFetching from "./DataFetching";
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Container/>
+    {/* <Container/> */}
   {/* < Example/> */}
+  < DataFetching/>
+
     </React.StrictMode>
 );
 

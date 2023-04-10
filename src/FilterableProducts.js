@@ -9,6 +9,8 @@ function FilterableProducts(props) {
   const inStockOnly = props.stockOnly;
 
   const rows = [];
+
+  
   let lastCategory = null;
 
   props.products.forEach((product) => {

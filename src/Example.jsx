@@ -2,26 +2,35 @@ import React ,{useState ,useEffect} from 'react'
 
 function Example() {
     const [count1, setCount1] = useState(0)
-    const [count2, setCount2] = useState(0)
+    const [count2, setCount2] = useState(50)
     
     const [windowsWidth, setWindowsWidth] = useState(window.innerWidth)
-useEffect(() => {
-  console.log(count1);
-  console.log(count2)
+// useEffect(() => {
+//   console.log(count1);
+//   console.log(count2)
  
   
-}, [count1 , count2])
+// }, [count1 , count2])
 
 
-const  handlesize = () => {
-  setWindowsWidth(window.innerWidth)
-}
+// const  handlesize = () => {
+//   setWindowsWidth(window.innerWidth)
+// }
+// useEffect(() => {
+//   window.addEventListener( 'resize' , handlesize)
+
+  
+  
+// }, [])
 useEffect(() => {
-  window.addEventListener( 'resize' , handlesize)
+  console.log(count1)
 
-  
-  
-}, [])
+  return ( () => {
+    setCount1(prev => prev+ 1)
+  })
+
+},[] )
+
 
 
 function increment1 (){

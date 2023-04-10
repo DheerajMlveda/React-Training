@@ -23,11 +23,11 @@ function DataFetching() {
         setIsLoading(false);
       })
       .catch(function (error) {
-        
+
         setError(true)
         setIsLoading(false)
         setErrorContent(error)
-        
+
 
       })
       .finally(function () {
@@ -72,19 +72,19 @@ function DataFetching() {
 
       {isLoading ? (
         <ReactLoading type="cubes" color="grey" height={260} width={260} />
-      ) : !error ?  (
+      ) : !error ? (
         <ListGroup>
           {todos.map((todo) => {
             return (
-              <TodoRow setError={setError} setErrorContent={setErrorContent}todo={todo} todos={todos} setTodos={setTodos} />
+              <TodoRow setError={setError} setErrorContent={setErrorContent} todo={todo} todos={todos} setTodos={setTodos} />
             );
           })}
         </ListGroup>
-    ) :  (<Alert variant="danger"> {errorContent.message}</Alert>)
-      
-    
-      
-      
+      ) : (<Alert variant="danger"> {errorContent.message}</Alert>)
+
+
+
+
       }
       <div style={{ color: 'yellow', position: 'relative' }}>
         <div style={{ position: "absolute", margin: '10px', left: "0px" }}>

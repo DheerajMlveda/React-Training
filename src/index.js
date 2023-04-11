@@ -1,24 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
+import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import DataFetching from "./DataFetching";
-// import App from "./App";
+// import DataFetching from "./DataFetching";
+import App from "./App";
 // import Hero from "./Hero";
 // import ErrorBoundary from "./ErrorBoundary";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <DataFetching/>
-    {/* <App /> */}
     {/* <ErrorBoundary>
-      <Hero heroName="batman" />
-      <Hero heroName="superman" />
-      <Hero heroName="wonder-woman" />
-      <Hero heroName="joker" />
+      <DataFetching />
     </ErrorBoundary> */}
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

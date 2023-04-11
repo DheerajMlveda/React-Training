@@ -72,7 +72,7 @@ function DataFetching() {
 
       {isLoading ? (
         <ReactLoading type="cubes" color="grey" height={260} width={260} />
-      ) : !error ? (
+      )  : (
         <ListGroup>
           {todos.map((todo) => {
             return (
@@ -80,7 +80,7 @@ function DataFetching() {
             );
           })}
         </ListGroup>
-      ) : (<Alert variant="danger"> {errorContent.message}</Alert>)
+      ) 
 
 
 

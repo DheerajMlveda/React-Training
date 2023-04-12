@@ -51,10 +51,11 @@ function DataFetching() {
       // alignContent:"space-around",
       // justifyContent: 'center',
     }}>
-      <ErrorBoundary>
+      
         {isLoading ? (
           <ReactLoading type="cubes" color="grey" height={260} width={260} />
         ) : (
+          <ErrorBoundary>
           <ListGroup>
             {todos.map((todo) => {
               return (
@@ -62,6 +63,7 @@ function DataFetching() {
               );
             })}
           </ListGroup>
+          </ErrorBoundary>
         )
         }
         <div style={{ color: 'yellow', position: 'relative' }}>
@@ -72,7 +74,7 @@ function DataFetching() {
             <Button onClick={() => onPaginationUpdate(currentPageIndex + 1)} active={currentPageIndex < 20 && !pageChange ? true : false} variant={currentPageIndex < 20 && !pageChange ? 'primary' : 'secondary'} >next</Button>
           </div>
         </div>
-      </ErrorBoundary>
+     
     </div>
   );
 }

@@ -20,20 +20,18 @@ function TodoRow(props) {
           return element.id !== key;
         }));
       })
-      .catch(function (error) {
-        console.log(error)
+      .catch((error) =>{
+          console.log(error)
       })
+
+      
       .finally(function () {
         // always executed
         // console.log(key);
         setDeleting(false);
       });
-
-
-
   }
   return (
-    <ErrorBoundary>
 
     <ListGroup.Item
       key={props.todo.id}
@@ -59,7 +57,6 @@ function TodoRow(props) {
         variant={!deleting ? 'primary' : 'secondary'} size="sm" >Delete
       </Button>
     </ListGroup.Item>
-      </ErrorBoundary>
   )
 }
 

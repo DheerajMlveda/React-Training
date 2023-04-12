@@ -24,8 +24,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="order-summary" element={<OrderSummary />} />
-        <Route path="*" element={<Nomatch />} />
-
         <Route path="Products" element={<Products />}>
           <Route index  element={<FeaturedProducts/>}/>
           <Route path="featured" element={<FeaturedProducts />} />
@@ -33,6 +31,7 @@ function App() {
         </Route>
         <Route path="users" element={<Users/>}>
         <Route path=":userId" element={<UserDetails/> }/>
+        <Route path="*" element={<Nomatch />} />
         </Route>
       </Routes>
     </div>

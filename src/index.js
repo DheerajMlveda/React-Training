@@ -6,12 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import DataFetching from "./DataFetching";
 // import App from "./App";
 // import Hero from "./Hero";
-// import ErrorBoundary from "./ErrorBoundary";
+import ErrorBoundary from "./ErrorBoundary";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <ErrorBoundary>
+
     <DataFetching/>
+    </ErrorBoundary>
     {/* <App /> */}
     {/* <ErrorBoundary>
       <Hero heroName="batman" />

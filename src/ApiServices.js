@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function fetchTodos(currentPageIndex) {
-  return axios.get(`https://jsonplaceholder.typicode.com/todos`, {
+  return axios.get(`https://jsonplaceholder.typicode.om/todos`, {
     params: {
       _page: currentPageIndex,
       _limit: 10,

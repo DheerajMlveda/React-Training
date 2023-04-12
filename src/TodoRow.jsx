@@ -20,9 +20,7 @@ function TodoRow(props) {
         }));
       })
       .catch(function (error) {
-        console.log(error);
-        props.setError(true);
-        props.setErrorContent(error)
+        console.log(error)
       })
       .finally(function () {
         // always executed

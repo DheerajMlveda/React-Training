@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { DeleteTodo } from './ApiServices';
+import ErrorBoundary from './ErrorBoundary';
 
 
 function TodoRow(props) {
@@ -32,13 +33,15 @@ function TodoRow(props) {
 
   }
   return (
+    <ErrorBoundary>
+
     <ListGroup.Item
       key={props.todo.id}
       id={props.key}
       style={{
         position: "relative",
       }}
-    >
+      >
       <div>
         <>
           {" "}
@@ -56,6 +59,7 @@ function TodoRow(props) {
         variant={!deleting ? 'primary' : 'secondary'} size="sm" >Delete
       </Button>
     </ListGroup.Item>
+      </ErrorBoundary>
   )
 }
 

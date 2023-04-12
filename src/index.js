@@ -12,16 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
-
-    <DataFetching/>
+      <DataFetching />
     </ErrorBoundary>
-    {/* <App /> */}
-    {/* <ErrorBoundary>
-      <Hero heroName="batman" />
-      <Hero heroName="superman" />
-      <Hero heroName="wonder-woman" />
-      <Hero heroName="joker" />
-    </ErrorBoundary> */}
   </React.StrictMode>
 );
 

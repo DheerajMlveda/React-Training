@@ -8,9 +8,7 @@ import ErrorBoundary from "./ErrorBoundary";
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <DataFetching />
-      </ErrorBoundary>
+     
     </div>
   );
 }

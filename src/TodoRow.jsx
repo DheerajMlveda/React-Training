@@ -3,10 +3,12 @@ import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { DeleteTodo } from './ApiServices';
 import ErrorBoundary from './ErrorBoundary';
+// import ErrorBoundary from './ErrorBoundary';
 
 
 function TodoRow(props) {
   const [deleting, setDeleting] = useState(false)
+  const [errorCheck, setErrorCheck] = useState(false)
 
 
   // console.log(props.todo.id);
@@ -21,7 +23,8 @@ function TodoRow(props) {
         }));
       })
       .catch((error) =>{
-          console.log(error)
+        setDeleting(true);
+          setErrorCheck(true);
       })
 
       
@@ -30,12 +33,13 @@ function TodoRow(props) {
         // console.log(key);
         setDeleting(false);
       });
+    
   }
+  if( errorCheck)throw new Error('hey hey')
   return (
 
     <ListGroup.Item
-      key={props.todo.id}
-      id={props.key}
+   
       style={{
         position: "relative",
       }}
@@ -52,10 +56,13 @@ function TodoRow(props) {
           {props.todo.title}
         </span>
       </div>
+      
+
       <Button active={!deleting ? true : false}
         onClick={() => deleteTodo(props.todo.id)}
         variant={!deleting ? 'primary' : 'secondary'} size="sm" >Delete
       </Button>
+        
     </ListGroup.Item>
   )
 }

@@ -11,7 +11,7 @@ export function fetchTodos(currentPageIndex) {
 
 export function DeleteTodo(todoId) {
   return axios.delete(
-    `https://jsonplaceolder.typicode.com/todos/${todoId}`,
+    `https://jsnplaceholder.typicode.com/todos/${todoId}`,
     {}
   );
 }

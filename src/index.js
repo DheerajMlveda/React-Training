@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 // import DataFetching from "./DataFetching";
 import App from "./App";
+// import Container from "./Container";
 // import Hero from "./Hero";
 // import ErrorBoundary from "./ErrorBoundary";
 
@@ -17,6 +18,7 @@ root.render(
     <BrowserRouter>
     <App />
     </BrowserRouter>
+    {/* <Container/> */}
   </React.StrictMode>
 );
 

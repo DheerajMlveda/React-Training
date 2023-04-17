@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 // import DataFetching from "./DataFetching";
 import App from "./App";
@@ -15,9 +14,10 @@ root.render(
     {/* <ErrorBoundary>
       <DataFetching />
     </ErrorBoundary> */}
-    <BrowserRouter>
+
     <App />
-    </BrowserRouter>
+
+
     {/* <Container/> */}
   </React.StrictMode>
 );

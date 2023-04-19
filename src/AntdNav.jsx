@@ -36,7 +36,7 @@ export default class SiderDemo extends Component {
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
-              <Link to='home'>
+              <Link to='/'>
                 
               <HomeOutlined/>
               <span>Home</span>
@@ -74,7 +74,7 @@ export default class SiderDemo extends Component {
           }}
           >
           <Routes>
-            <Route  path='/home'  element={<Home/>} />
+            <Route  path='/'  element={<Home/>} />
             <Route path ='products' element={<ProductList/>} />
             <Route path ='about' element={<About/>} />
             <Route path ='contact' element={<Contact/>} />

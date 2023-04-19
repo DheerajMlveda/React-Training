@@ -14,7 +14,7 @@ function ProductList() {
   
   const columns = [
     { title: 'Name', dataIndex: 'name', key: 'name' },
-    { title: 'Count', dataIndex: 'count', key: 'count' },
+    { title: 'age', dataIndex: 'age', key: 'age' },
     { title: 'Address', dataIndex: 'address', key: 'address' },
     {
       title: 'Action',
@@ -27,24 +27,24 @@ function ProductList() {
   const data = [
     {
       key: 1,
-      name: 'Baseball bat',
-      count: 32,
+      name: 'Patrick-Batman',
+      age: 32,
       address: 'New York No. 1 Lake Park',
-      description: 'My name is John Brown, I am 32 years old, living in New York No. 1 Lake Park.',
+      description: 'My name is Patrick-Batman, I am 32 years old, living in New York No. 1 Lake Park.',
     },
     {
       key: 2,
-      name: 'Basket ball',
-      count: 42,
+      name: 'Walter-white',
+      age: 42,
       address: 'London No. 1 Lake Park',
-      description: 'My name is Jim Green, I am 42 years old, living in London No. 1 Lake Park.',
+      description: 'My name is Walter White, I am 42 years old, living in London No. 1 Lake Park.',
     },
     {
       key: 3,
-      name: 'Rocket',
-      count: 2,
+      name: 'Eminem',
+      age: 2,
       address: 'Sidney No. 1 Lake Park',
-      description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.',
+      description: 'My name is Joe Eminem, I am 32 years old, living in Sidney No. 1 Lake Park.',
     },
   ];
   return (

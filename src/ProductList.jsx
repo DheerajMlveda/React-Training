@@ -1,8 +1,9 @@
 import { Table } from 'antd';
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { UserAddOutlined } from '@ant-design/icons';
 
-function ProductList() {
+function UserList() {
 
   const navigate = useNavigate();
 
@@ -55,9 +56,9 @@ function ProductList() {
         dataSource={data}
       />
       <Button type="primary" onClick={() => {
-        navigate('/addProduct')
+        navigate('/addUser')
       }}>
-        Add new product
+        <UserAddOutlined/>Add new user
       </Button>
      
 
@@ -71,7 +72,7 @@ function ProductList() {
   )
 }
 
-export default ProductList
+export default UserList;
 
 
 

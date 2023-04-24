@@ -4,13 +4,17 @@ import "antd/dist/reset.css";
 import "./index.css";
 import AntdNav from "./AntdNav";
 import { BrowserRouter } from "react-router-dom";
+import React, { createContext, useContext, useState } from "react";
 
 const App = () => {
+  const User = createContext();
   return (
     <div style={{}}>
-      <BackTop/>
+      <BackTop />
       <BrowserRouter>
-        <AntdNav />
+        <User.Provider value={{}}>
+          <AntdNav />
+        </User.Provider>
       </BrowserRouter>
     </div>
   );

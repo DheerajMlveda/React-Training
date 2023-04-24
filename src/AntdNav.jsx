@@ -8,12 +8,14 @@ import {
   TagOutlined
 } from '@ant-design/icons';
 
-import {  Typography } from 'antd';
 import Home from './Components/Home';
 import ProductList from './ProductList';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import AddProduct from './Components/AddProduct';
+import AddUser from './Components/AddUsers';
+import Profile from './Components/Profile';
+import LogIn from './Components/LogIn';
+import Register from './Components/Register';
 
 
 
@@ -42,16 +44,16 @@ export default class SiderDemo extends Component {
               <span>Home</span>
               </Link>
             </Menu.Item>
+            <Menu.Item key="3">
+              <Link to='products'>
+            <TagOutlined/>
+              <span> Users</span>
+              </Link>
+            </Menu.Item>
             <Menu.Item key="2">
               <Link to="about">
             <InfoCircleOutlined/>
               <span> About</span>
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Link to='products'>
-            <TagOutlined/>
-              <span> Products</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="4">
@@ -78,7 +80,10 @@ export default class SiderDemo extends Component {
             <Route path ='products' element={<ProductList/>} />
             <Route path ='about' element={<About/>} />
             <Route path ='contact' element={<Contact/>} />
-            <Route path ='addProduct' element={<AddProduct/>} />
+            <Route path ='addUser' element={<AddUser/>} />
+            <Route path ='profile' element={<Profile/>} />
+            <Route path ='login' element={<LogIn/>} />
+            <Route path ='register' element={<Register/>} />
           </Routes>
         </Content>
           </Layout>
